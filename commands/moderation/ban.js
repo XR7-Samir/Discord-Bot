@@ -19,7 +19,7 @@ module.exports = {
 
     if (!Member)
       return message.channel.send(
-        `Please Mention A Member That You Want To Ban!`
+        `Command ban requires 1 arguments (--ban (username))`` passed 0`
       );
 
     if (!message.guild.members.cache.get(Member.id))

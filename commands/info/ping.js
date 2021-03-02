@@ -13,7 +13,7 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setColor(Color)
-      .setDescription(`Pong - ${client.ws.ping}`)
+      .setDescription(`Pong : ${client.ws.ping}`)
       .setFooter(`Requested By ${message.author.username}`)
       .setTimestamp();
 
