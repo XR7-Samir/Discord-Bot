@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const client = new Discord.Client();
 const { Prefix, Color } = require("./config.js");
+const { Token } = process.env;
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.db = require("quick.db");
@@ -9,7 +10,11 @@ client.db = require("quick.db");
 client.on("ready", async () => {
   console.log(`ready!`);
   client.user
-    .setActivity(`Servers : ${await client.guilds.cache.size} | Users : ${await client.users.cache.size}`, { type: "PLAYING" })
+    .setActivity(
+      `Servers : ${await client.guilds.cache.size} | Users : ${await client
+        .users.cache.size}`,
+      { type: "PLAYING" }
+    )
     .catch(error => console.log(error));
 });
 
@@ -80,6 +85,5 @@ client.on("message", async message => {
   console.log(
     `User : ${message.author.tag} (${message.author.id}) Server : ${message.guild.name} (${message.guild.id}) Command : ${command.name}`
   );
-});
-
-client.login(process.env.Token);
+  });
+  client.login(Token);
