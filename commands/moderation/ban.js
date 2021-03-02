@@ -18,9 +18,7 @@ module.exports = {
     let Member = message.mentions.users.first();
 
     if (!Member)
-      return message.channel.send(
-        `Command ban requires 1 arguments (--ban (username))`` passed 0`
-      );
+      return message.channel.send(`Command ban requires id to be mentioned`);
 
     if (!message.guild.members.cache.get(Member.id))
       return message.channel.send(`Please Mention A Valid Member!`);
