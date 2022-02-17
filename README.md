@@ -1,16 +1,16 @@
-Hello Plss subscribe my yt channel
+# SECRE
 
-        Yashraj Gaming
+A Discord bot for Searching Anime, manga etc.
+ 
+ 
+ JOIN MY SERVER FOR ANY HELP - 
+[CLICK HERE](https://discord.gg/invite/UjavxWAs7X)
 
 
 
-For sorce code join our discord server
-Link-[https://discord.gg/wdactqv]()
+JUST MAKE AN `.Env` file with following variavles
+```
+TOKEN= 
+```
 
-HOW TO START!?
-
-1.GO TO DEVELOPER PORTLE [https://discord.com/developers/applications]()
-
-2.CREATE APPLICATION AND GET TOKEN FROM THERE
-
-3.Fill value in 'config.json'
+THEN EDIT `.Config.js`
